@@ -1,0 +1,36 @@
+.table-container {
+  width: 100%;
+
+  .table-fixed {
+    overflow-y: auto;
+    overflow-x: scroll;
+    max-height: 60vh;
+    /* Sticky header */
+    table {
+      td,
+      th {
+        text-wrap: nowrap;
+      }
+    }
+
+    /* Sticky last column */
+    .action {
+      position: -webkit-sticky; /* For Safari */
+      position: sticky;
+      right: 0;
+      background-color: #f4f4f4; /* Ensure background to hide underlying rows */
+      z-index: 2;
+    }
+
+    td.action {
+      background-color: white;
+      z-index: 1;
+    }
+
+    tr.selected td {
+      background-color: #f14a00 !important;
+      color: #f4f4f4;
+      cursor: pointer;
+    }
+  }
+}

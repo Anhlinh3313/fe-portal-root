@@ -1,0 +1,508 @@
+// Overrides user _variables-components
+@import '../../bootstrap-extended/include';
+
+// Google Color Palette defined: http://www.google.com/design/spec/style/color.html
+
+$white-color: (
+  'base': #ffffff,
+);
+$black-color: (
+  'base': #000000,
+);
+$dark-color: (
+  'base': $dark,
+  'darken-1': #343434,
+  'darken-2': #1e1e1e,
+  'darken-3': #626262,
+);
+$light-color: (
+  'base': $light,
+);
+
+$primary-color: (
+  'lighten-4': lighten($primary, 20%),
+  'lighten-3': lighten($primary, 15%),
+  'lighten-2': lighten($primary, 10%),
+  'lighten-1': lighten($primary, 5%),
+  'base': $primary,
+  'darken-1': darken($primary, 5%),
+  'darken-2': darken($primary, 10%),
+  'darken-3': darken($primary, 15%),
+  'darken-4': darken($primary, 20%),
+);
+$secondary-color: (
+  'lighten-4': lighten($secondary, 20%),
+  'lighten-3': lighten($secondary, 15%),
+  'lighten-2': lighten($secondary, 10%),
+  'lighten-1': lighten($secondary, 5%),
+  'base': $secondary,
+  'darken-1': darken($secondary, 5%),
+  'darken-2': darken($secondary, 10%),
+  'darken-3': darken($secondary, 15%),
+  'darken-4': darken($secondary, 20%),
+);
+
+// #4839EB
+//
+$success-color: (
+  'lighten-4': lighten($success, 20%),
+  'lighten-3': lighten($success, 15%),
+  'lighten-2': lighten($success, 10%),
+  'lighten-1': lighten($success, 5%),
+  'base': $success,
+  'darken-1': darken($success, 5%),
+  'darken-2': darken($success, 10%),
+  'darken-3': darken($success, 15%),
+  'darken-4': darken($success, 20%),
+);
+$info-color: (
+  'lighten-4': lighten($info, 20%),
+  'lighten-3': lighten($info, 15%),
+  'lighten-2': lighten($info, 10%),
+  'lighten-1': lighten($info, 5%),
+  'base': $info,
+  'darken-1': darken($info, 5%),
+  'darken-2': darken($info, 10%),
+  'darken-3': darken($info, 15%),
+  'darken-4': darken($info, 20%),
+);
+$warning-color: (
+  'lighten-4': lighten($warning, 20%),
+  'lighten-3': lighten($warning, 15%),
+  'lighten-2': lighten($warning, 10%),
+  'lighten-1': lighten($warning, 5%),
+  'base': $warning,
+  // #FFAC5D
+  'darken-1': darken($warning, 5%),
+  'darken-2': darken($warning, 10%),
+  'darken-3': darken($warning, 15%),
+  'darken-4': darken($warning, 20%),
+);
+$danger-color: (
+  'lighten-4': lighten($danger, 20%),
+  'lighten-3': lighten($danger, 15%),
+  'lighten-2': lighten($danger, 10%),
+  'lighten-1': lighten($danger, 5%),
+  'base': $danger,
+  'darken-1': darken($danger, 5%),
+  'darken-2': darken($danger, 10%),
+  'darken-3': darken($danger, 15%),
+  'darken-4': darken($danger, 20%),
+);
+
+$AA-color: (
+  'lighten-4': lighten($AA, 20%),
+  'lighten-3': lighten($AA, 15%),
+  'lighten-2': lighten($AA, 10%),
+  'lighten-1': lighten($AA, 5%),
+  'base': $AA,
+  'darken-1': darken($AA, 5%),
+  'darken-2': darken($AA, 10%),
+  'darken-3': darken($AA, 15%),
+  'darken-4': darken($AA, 20%),
+);
+
+$FA-color: (
+  'lighten-4': lighten($FA, 20%),
+  'lighten-3': lighten($FA, 15%),
+  'lighten-2': lighten($FA, 10%),
+  'lighten-1': lighten($FA, 5%),
+  'base': $FA,
+  'darken-1': darken($FA, 5%),
+  'darken-2': darken($FA, 10%),
+  'darken-3': darken($FA, 15%),
+  'darken-4': darken($FA, 20%),
+);
+
+$PUM-color: (
+  'lighten-4': lighten($PUM, 20%),
+  'lighten-3': lighten($PUM, 15%),
+  'lighten-2': lighten($PUM, 10%),
+  'lighten-1': lighten($PUM, 5%),
+  'base': $PUM,
+  'darken-1': darken($PUM, 5%),
+  'darken-2': darken($PUM, 10%),
+  'darken-3': darken($PUM, 15%),
+  'darken-4': darken($PUM, 20%),
+);
+
+$UM-color: (
+  'lighten-4': lighten($UM, 20%),
+  'lighten-3': lighten($UM, 15%),
+  'lighten-2': lighten($UM, 10%),
+  'lighten-1': lighten($UM, 5%),
+  'base': $UM,
+  'darken-1': darken($UM, 5%),
+  'darken-2': darken($UM, 10%),
+  'darken-3': darken($UM, 15%),
+  'darken-4': darken($UM, 20%),
+);
+
+$BM-color: (
+  'lighten-4': lighten($BM, 20%),
+  'lighten-3': lighten($BM, 15%),
+  'lighten-2': lighten($BM, 10%),
+  'lighten-1': lighten($BM, 5%),
+  'base': $BM,
+  'darken-1': darken($BM, 5%),
+  'darken-2': darken($BM, 10%),
+  'darken-3': darken($BM, 15%),
+  'darken-4': darken($BM, 20%),
+);
+
+$BDM-color: (
+  'lighten-4': lighten($BDM, 20%),
+  'lighten-3': lighten($BDM, 15%),
+  'lighten-2': lighten($BDM, 10%),
+  'lighten-1': lighten($BDM, 5%),
+  'base': $BDM,
+  'darken-1': darken($BDM, 5%),
+  'darken-2': darken($BDM, 10%),
+  'darken-3': darken($BDM, 15%),
+  'darken-4': darken($BDM, 20%),
+);
+
+$BDM1-color: (
+  'lighten-4': lighten($BDM1, 20%),
+  'lighten-3': lighten($BDM1, 15%),
+  'lighten-2': lighten($BDM1, 10%),
+  'lighten-1': lighten($BDM1, 5%),
+  'base': $BDM1,
+  'darken-1': darken($BDM1, 5%),
+  'darken-2': darken($BDM1, 10%),
+  'darken-3': darken($BDM1, 15%),
+  'darken-4': darken($BDM1, 20%),
+);
+
+$BDM2-color: (
+  'lighten-4': lighten($BDM2, 20%),
+  'lighten-3': lighten($BDM2, 15%),
+  'lighten-2': lighten($BDM2, 10%),
+  'lighten-1': lighten($BDM2, 5%),
+  'base': $BDM2,
+  'darken-1': darken($BDM2, 5%),
+  'darken-2': darken($BDM2, 10%),
+  'darken-3': darken($BDM2, 15%),
+  'darken-4': darken($BDM2, 20%),
+);
+
+$Diamond-color: (
+  'lighten-4': lighten($Diamond, 20%),
+  'lighten-3': lighten($Diamond, 15%),
+  'lighten-2': lighten($Diamond, 10%),
+  'lighten-1': lighten($Diamond, 5%),
+  'base': $Diamond,
+  'darken-1': darken($Diamond, 5%),
+  'darken-2': darken($Diamond, 10%),
+  'darken-3': darken($Diamond, 15%),
+  'darken-4': darken($Diamond, 20%),
+);
+
+$BlueDiamond-color: (
+  'lighten-4': lighten($BlueDiamond, 20%),
+  'lighten-3': lighten($BlueDiamond, 15%),
+  'lighten-2': lighten($BlueDiamond, 10%),
+  'lighten-1': lighten($BlueDiamond, 5%),
+  'base': $BlueDiamond,
+  'darken-1': darken($BlueDiamond, 5%),
+  'darken-2': darken($BlueDiamond, 10%),
+  'darken-3': darken($BlueDiamond, 15%),
+  'darken-4': darken($BlueDiamond, 20%),
+);
+
+$blue-1-color: (
+  'lighten-4': lighten($blue-1, 20%),
+  'lighten-3': lighten($blue-1, 15%),
+  'lighten-2': lighten($blue-1, 10%),
+  'lighten-1': lighten($blue-1, 5%),
+  'base': $blue-1,
+  'darken-1': darken($blue-1, 5%),
+  'darken-2': darken($blue-1, 10%),
+  'darken-3': darken($blue-1, 15%),
+  'darken-4': darken($blue-1, 20%),
+);
+
+$blue-2-color: (
+  'lighten-4': lighten($blue-2, 20%),
+  'lighten-3': lighten($blue-2, 15%),
+  'lighten-2': lighten($blue-2, 10%),
+  'lighten-1': lighten($blue-2, 5%),
+  'base': $blue-2,
+  'darken-1': darken($blue-2, 5%),
+  'darken-2': darken($blue-2, 10%),
+  'darken-3': darken($blue-2, 15%),
+  'darken-4': darken($blue-2, 20%),
+);
+
+$blue-3-color: (
+  'lighten-4': lighten($blue-3, 20%),
+  'lighten-3': lighten($blue-3, 15%),
+  'lighten-2': lighten($blue-3, 10%),
+  'lighten-1': lighten($blue-3, 5%),
+  'base': $blue-3,
+  'darken-1': darken($blue-3, 5%),
+  'darken-2': darken($blue-3, 10%),
+  'darken-3': darken($blue-3, 15%),
+  'darken-4': darken($blue-3, 20%),
+);
+
+$blue-4-color: (
+  'lighten-4': lighten($blue-4, 20%),
+  'lighten-3': lighten($blue-4, 15%),
+  'lighten-2': lighten($blue-4, 10%),
+  'lighten-1': lighten($blue-4, 5%),
+  'base': $blue-4,
+  'darken-1': darken($blue-4, 5%),
+  'darken-2': darken($blue-4, 10%),
+  'darken-3': darken($blue-4, 15%),
+  'darken-4': darken($blue-4, 20%),
+);
+
+//**ChartColor
+$pending-color: (
+  'lighten-4': lighten($pending, 20%),
+  'lighten-3': lighten($pending, 15%),
+  'lighten-2': lighten($pending, 10%),
+  'lighten-1': lighten($pending, 5%),
+  'base': $pending,
+  'darken-1': darken($pending, 5%),
+  'darken-2': darken($pending, 10%),
+  'darken-3': darken($pending, 15%),
+  'darken-4': darken($pending, 20%),
+);
+
+$not-enough-records-color: (
+  'lighten-4': lighten($not-enough-records, 20%),
+  'lighten-3': lighten($not-enough-records, 15%),
+  'lighten-2': lighten($not-enough-records, 10%),
+  'lighten-1': lighten($not-enough-records, 5%),
+  'base': $not-enough-records,
+  'darken-1': darken($not-enough-records, 5%),
+  'darken-2': darken($not-enough-records, 10%),
+  'darken-3': darken($not-enough-records, 15%),
+  'darken-4': darken($not-enough-records, 20%),
+);
+
+$bonus-color: (
+  'lighten-4': lighten($bonus, 20%),
+  'lighten-3': lighten($bonus, 15%),
+  'lighten-2': lighten($bonus, 10%),
+  'lighten-1': lighten($bonus, 5%),
+  'base': $bonus,
+  'darken-1': darken($bonus, 5%),
+  'darken-2': darken($bonus, 10%),
+  'darken-3': darken($bonus, 15%),
+  'darken-4': darken($bonus, 20%),
+);
+
+$complete-brief-color: (
+  'lighten-4': lighten($complete-brief, 20%),
+  'lighten-3': lighten($complete-brief, 15%),
+  'lighten-2': lighten($complete-brief, 10%),
+  'lighten-1': lighten($complete-brief, 5%),
+  'base': $complete-brief,
+  'darken-1': darken($complete-brief, 5%),
+  'darken-2': darken($complete-brief, 10%),
+  'darken-3': darken($complete-brief, 15%),
+  'darken-4': darken($complete-brief, 20%),
+);
+
+$published-color: (
+  'lighten-4': lighten($published, 20%),
+  'lighten-3': lighten($published, 15%),
+  'lighten-2': lighten($published, 10%),
+  'lighten-1': lighten($published, 5%),
+  'base': $published,
+  'darken-1': darken($published, 5%),
+  'darken-2': darken($published, 10%),
+  'darken-3': darken($published, 15%),
+  'darken-4': darken($published, 20%),
+);
+
+$not-renewed-yet-color: (
+  'lighten-4': lighten($not-renewed-yet, 20%),
+  'lighten-3': lighten($not-renewed-yet, 15%),
+  'lighten-2': lighten($not-renewed-yet, 10%),
+  'lighten-1': lighten($not-renewed-yet, 5%),
+  'base': $not-renewed-yet,
+  'darken-1': darken($not-renewed-yet, 5%),
+  'darken-2': darken($not-renewed-yet, 10%),
+  'darken-3': darken($not-renewed-yet, 15%),
+  'darken-4': darken($not-renewed-yet, 20%),
+);
+
+$late-color: (
+  'lighten-4': lighten($late, 20%),
+  'lighten-3': lighten($late, 15%),
+  'lighten-2': lighten($late, 10%),
+  'lighten-1': lighten($late, 5%),
+  'base': $late,
+  'darken-1': darken($late, 5%),
+  'darken-2': darken($late, 10%),
+  'darken-3': darken($late, 15%),
+  'darken-4': darken($late, 20%),
+);
+
+$has-resumed-color: (
+  'lighten-4': lighten($has-resumed, 20%),
+  'lighten-3': lighten($has-resumed, 15%),
+  'lighten-2': lighten($has-resumed, 10%),
+  'lighten-1': lighten($has-resumed, 5%),
+  'base': $has-resumed,
+  'darken-1': darken($has-resumed, 5%),
+  'darken-2': darken($has-resumed, 10%),
+  'darken-3': darken($has-resumed, 15%),
+  'darken-4': darken($has-resumed, 20%),
+);
+
+$pending-6-month-color: (
+  'lighten-4': lighten($pending-6-month, 20%),
+  'lighten-3': lighten($pending-6-month, 15%),
+  'lighten-2': lighten($pending-6-month, 10%),
+  'lighten-1': lighten($pending-6-month, 5%),
+  'base': $pending-6-month,
+  'darken-1': darken($pending-6-month, 5%),
+  'darken-2': darken($pending-6-month, 10%),
+  'darken-3': darken($pending-6-month, 15%),
+  'darken-4': darken($pending-6-month, 20%),
+);
+
+$inactivity-color: (
+  'lighten-4': lighten($inactivity, 20%),
+  'lighten-3': lighten($inactivity, 15%),
+  'lighten-2': lighten($inactivity, 10%),
+  'lighten-1': lighten($inactivity, 5%),
+  'base': $inactivity,
+  'darken-1': darken($inactivity, 5%),
+  'darken-2': darken($inactivity, 10%),
+  'darken-3': darken($inactivity, 15%),
+  'darken-4': darken($inactivity, 20%),
+);
+
+$processing-color: (
+  'lighten-4': lighten($processing, 20%),
+  'lighten-3': lighten($processing, 15%),
+  'lighten-2': lighten($processing, 10%),
+  'lighten-1': lighten($processing, 5%),
+  'base': $processing,
+  'darken-1': darken($processing, 5%),
+  'darken-2': darken($processing, 10%),
+  'darken-3': darken($processing, 15%),
+  'darken-4': darken($processing, 20%),
+);
+
+$paid-color: (
+  'lighten-4': lighten($paid, 20%),
+  'lighten-3': lighten($paid, 15%),
+  'lighten-2': lighten($paid, 10%),
+  'lighten-1': lighten($paid, 5%),
+  'base': $paid,
+  'darken-1': darken($paid, 5%),
+  'darken-2': darken($paid, 10%),
+  'darken-3': darken($paid, 15%),
+  'darken-4': darken($paid, 20%),
+);
+
+$complete-receiving-color: (
+  'lighten-4': lighten($complete-receiving, 20%),
+  'lighten-3': lighten($complete-receiving, 15%),
+  'lighten-2': lighten($complete-receiving, 10%),
+  'lighten-1': lighten($complete-receiving, 5%),
+  'base': $complete-receiving,
+  'darken-1': darken($complete-receiving, 5%),
+  'darken-2': darken($complete-receiving, 10%),
+  'darken-3': darken($complete-receiving, 15%),
+  'darken-4': darken($complete-receiving, 20%),
+);
+
+$complete-contract-color: (
+  'lighten-4': lighten($complete-contract, 20%),
+  'lighten-3': lighten($complete-contract, 15%),
+  'lighten-2': lighten($complete-contract, 10%),
+  'lighten-1': lighten($complete-contract, 5%),
+  'base': $complete-contract,
+  'darken-1': darken($complete-contract, 5%),
+  'darken-2': darken($complete-contract, 10%),
+  'darken-3': darken($complete-contract, 15%),
+  'darken-4': darken($complete-contract, 20%),
+);
+
+$cancel-booking-color: (
+  'lighten-4': lighten($cancel-booking, 20%),
+  'lighten-3': lighten($cancel-booking, 15%),
+  'lighten-2': lighten($cancel-booking, 10%),
+  'lighten-1': lighten($cancel-booking, 5%),
+  'base': $cancel-booking,
+  'darken-1': darken($cancel-booking, 5%),
+  'darken-2': darken($cancel-booking, 10%),
+  'darken-3': darken($cancel-booking, 15%),
+  'darken-4': darken($cancel-booking, 20%),
+);
+
+$canceled-color: (
+  'lighten-4': lighten($canceled, 20%),
+  'lighten-3': lighten($canceled, 15%),
+  'lighten-2': lighten($canceled, 10%),
+  'lighten-1': lighten($canceled, 5%),
+  'base': $canceled,
+  'darken-1': darken($canceled, 5%),
+  'darken-2': darken($canceled, 10%),
+  'darken-3': darken($canceled, 15%),
+  'darken-4': darken($canceled, 20%),
+);
+
+$deleted-color: (
+  'lighten-4': lighten($deleted, 20%),
+  'lighten-3': lighten($deleted, 15%),
+  'lighten-2': lighten($deleted, 10%),
+  'lighten-1': lighten($deleted, 5%),
+  'base': $deleted,
+  'darken-1': darken($deleted, 5%),
+  'darken-2': darken($deleted, 10%),
+  'darken-3': darken($deleted, 15%),
+  'darken-4': darken($deleted, 20%),
+);
+
+$colors: (
+  'white': $white-color,
+  'black': $black-color,
+  'dark': $dark-color,
+  'light': $light-color,
+  'primary': $primary-color,
+  'secondary': $secondary-color,
+  'success': $success-color,
+  'info': $info-color,
+  'warning': $warning-color,
+  'danger': $danger-color,
+  'AA': $AA-color,
+  'FA': $FA-color,
+  'PUM': $PUM-color,
+  'UM': $UM-color,
+  'BM': $BM-color,
+  'BDM': $BDM-color,
+  'BDM1': $BDM1-color,
+  'BDM2': $BDM2-color,
+  'Diamond': $Diamond-color,
+  'BlueDiamond': $BlueDiamond-color,
+  'blue-1': $blue-1-color,
+  'blue-2': $blue-2-color,
+  'blue-3': $blue-3-color,
+  'blue-4': $blue-4-color,
+  'not-enough-records': $not-enough-records-color,
+  'pending': $pending-color,
+  'bonus': $bonus-color,
+  'complete-brief': $complete-brief-color,
+  'published': $published-color,
+  'not-renewed-yet': $not-renewed-yet-color,
+  'late-color': $late-color,
+  'has-resumed': $has-resumed-color,
+  'pending-6-month': $pending-6-month-color,
+  'inactivity': $inactivity-color,
+  'processing': $processing-color,
+  'paid': $paid-color,
+  'complete-receiving': $complete-receiving-color,
+  'complete-contract': $complete-contract-color,
+  'cancel-booking': $cancel-booking-color,
+  'canceled': $canceled-color,
+  'deleted': $deleted-color,
+);

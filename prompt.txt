@@ -1,0 +1,43 @@
+### Yêu cầu Refactor React Code (JS)
+**Đầu vào:**
+
+```javascript
+
+```
+
+**Mục tiêu:**
+1. Dễ đọc và bảo trì cho từng loại file
+2. Tối ưu cấu trúc cho JS thuần
+3. Triển khai dynamic patterns hợp lý
+4. Đảm bảo hiệu năng runtime
+
+**Tiêu chí theo loại file:**
+✅ **Hook:**
+- Tách biệt logic nghiệp vụ
+- Sử dụng useCallback/memo hợp lý
+- Clear error boundaries
+- Reusable state management
+
+✅ **JSX Component:**
+- PropTypes định nghĩa đầy đủ
+- Component composition
+- Tránh props drilling
+- Tách UI logic riêng biệt
+
+✅ **Config File:**
+- Cấu trúc module rõ ràng
+- Env variables management
+- Dynamic configuration loader
+- Validation runtime
+
+**Yêu cầu đặc biệt (nếu có):**
+- [ ] Thêm JSDoc comments
+- [ ] Tối ưu bundle size
+- [ ] Thêm demo usage
+- [ ] Runtime validation
+
+**Output cần phải:**
+1. Không cần giải thích logic hoặc code
+2. Code phải đầy đủ và trong một file duy nhất
+3. Đánh giá độ phức tạp (Cyclomatic)
+4. Đề xuất

@@ -1,0 +1,25 @@
+.advanced-table {
+  th,
+  td {
+    box-sizing: border-box;
+    backface-visibility: hidden;
+  }
+
+  table {
+    width: max-content;
+    min-width: 100%;
+    .table > :not(caption) > * > * {
+      padding: 0.4rem 0.6rem;
+    }
+
+    tr.selected td {
+      background-color: rgb(230, 230, 230) !important;
+      // color: #f4f4f4;
+      cursor: pointer;
+      // --bs-table-color-type: unset;
+      // --bs-table-bg-type: unset;
+      // --bs-table-color-state: unset;
+      // --bs-table-bg-state: unset;
+    }
+  }
+}
